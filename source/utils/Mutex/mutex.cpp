@@ -8,7 +8,6 @@ Mutex::Mutex(){
 
 Mutex::~Mutex(){
 #ifdef _WIN32
-    mutex_.unlock();
 #elif __linux__
     ptrhead_mutex_destroy(&mutex_);
 #endif

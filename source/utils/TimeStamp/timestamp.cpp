@@ -29,7 +29,7 @@ std::string timeStamp::formatString(){
 }
 
 
-uint64 timeStamp::now(){
+uint64 timeStamp::NowSecond(){
    /* std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
 	std::time_t now_time_t = std::chrono::system_clock::to_time_t(now);
 	std::tm* now_tm = std::localtime(&now_time_t);
@@ -72,5 +72,22 @@ uint64 timeStamp::now(){
 	return ss.str();
 */
 	auto nowTime = std::chrono::system_clock::now();
-	return std::chrono::duration_cast<std::chrono::microseconds>(nowTime.time_since_epoch()).count();
+	return std::chrono::duration_cast<std::chrono::seconds>(nowTime.time_since_epoch()).count();
+}
+
+
+
+uint64 timeStamp::NowMs(){
+#ifdef _WIN32
+	// SYSTEMTIME sys_time;
+    // GetLocalTime(&sys_time);
+    // printf( "%4d/%02d/%02d %02d:%02d:%02d.%03d  %1d\n", sys_time.wYear,   sys_time.wMonth, sys_time.wDay, sys_time.wHour, sys_time.wMinute, sys_time.wSecond,sys_time.wMilliseconds,sys_time.wDayOfWeek);
+	auto nowTime = std::chrono::system_clock::now();
+	return std::chrono::duration_cast<std::chrono::milliseconds>(nowTime.time_since_epoch()).count();
+#elif __linux__
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    int64_t seconds = tv.tv_sec;
+    return seconds * 1000 + tv.tv_usec;
+#endif
 }

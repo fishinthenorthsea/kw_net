@@ -1,6 +1,15 @@
 #pragma once
 #include "../common.h"
 
+enum LogGrage : uint32{
+    Debug  = 0,
+    Info   = 1,
+    Error  = 2,
+};
+
+#define LogInfo(...)  {va(...);}
+
+
 
 class KwLog{
 public:
@@ -15,6 +24,3 @@ private:
 
 };
 
-void test(){
-    std::cout<<"44 44"<<std::endl;
-}

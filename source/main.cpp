@@ -5,27 +5,30 @@
 uint32 num = 0;
 kw::Mutex mutex;
 int main(){
-    test();
-    std::cout<<timeStamp::now()<<std::endl;
+    std::cout<<timeStamp::NowSecond()<<std::endl;
+    std::cout<<timeStamp::NowMs()<<std::endl;
     std::cout<<timeStamp::formatString()<<std::endl;
 
-    std::thread a([&](){
-        for(auto i = 0 ; i < 10000000 ; ++i){
-            
-            mutex.lock();
-            ++num;
-            mutex.unlock();
-        }
-    });
+    std::cout<<va("wudi %d  %s!\n",5,100);
 
 
-    for(auto i = 0 ; i < 10000000 ; ++i){
-            mutex.lock();
-            ++num;
-            mutex.unlock();
-        }
-    a.join();
+    
+    // std::thread a([&](){
+    //     for(auto i = 0 ; i < 10000000 ; ++i){           
+    //         mutex.lock();
+    //         ++num;
+    //         mutex.unlock();
+    //     }
+    // });
 
-    std::cout<<num<<std::endl;
+
+    // for(auto i = 0 ; i < 10000000 ; ++i){
+    //         mutex.lock();
+    //         ++num;
+    //         mutex.unlock();
+    // }
+    // a.join();
+
+    // std::cout<<num<<std::endl;
     return 0;
 }
