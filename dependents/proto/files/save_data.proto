@@ -1,0 +1,9 @@
+syntax = "proto3";
+package KwSave;
+
+import "save_home.proto";
+
+
+message Test{
+    uint32   id     = 1;
+}
