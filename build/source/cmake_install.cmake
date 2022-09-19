@@ -42,7 +42,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Administrator/Desktop/project/bin" TYPE EXECUTABLE FILES "C:/Users/Administrator/Desktop/project/bin/kw_muduo.exe")
+    file(INSTALL DESTINATION "C:/Users/Administrator/Desktop/project/bin" TYPE EXECUTABLE FILES "C:/Users/Administrator/Desktop/project/kw_muduo.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Users/Administrator/Desktop/project/bin/kw_muduo.exe")
@@ -52,7 +52,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Administrator/Desktop/project/bin" TYPE EXECUTABLE FILES "C:/Users/Administrator/Desktop/project/bin/kw_muduo.exe")
+    file(INSTALL DESTINATION "C:/Users/Administrator/Desktop/project/bin" TYPE EXECUTABLE FILES "C:/Users/Administrator/Desktop/project/kw_muduo.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Users/Administrator/Desktop/project/bin/kw_muduo.exe")
@@ -62,7 +62,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Administrator/Desktop/project/bin" TYPE EXECUTABLE FILES "C:/Users/Administrator/Desktop/project/bin/MinSizeRel/kw_muduo.exe")
+    file(INSTALL DESTINATION "C:/Users/Administrator/Desktop/project/bin" TYPE EXECUTABLE FILES "C:/Users/Administrator/Desktop/project/MinSizeRel/kw_muduo.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Users/Administrator/Desktop/project/bin/kw_muduo.exe")
@@ -72,7 +72,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Users/Administrator/Desktop/project/bin" TYPE EXECUTABLE FILES "C:/Users/Administrator/Desktop/project/bin/RelWithDebInfo/kw_muduo.exe")
+    file(INSTALL DESTINATION "C:/Users/Administrator/Desktop/project/bin" TYPE EXECUTABLE FILES "C:/Users/Administrator/Desktop/project/RelWithDebInfo/kw_muduo.exe")
   endif()
 endif()
 

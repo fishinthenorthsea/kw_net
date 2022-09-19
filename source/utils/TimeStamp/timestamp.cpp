@@ -1,11 +1,16 @@
 #include "timestamp.h"
 #include <chrono>
-timeStamp::timeStamp(){
-    secondCount = 0;
+
+using namespace kw;
+    
+timeStamp::timeStamp()
+            :secondCount(0)
+{
 }
 
-timeStamp::timeStamp(const uint64 &time){
-    secondCount = time;
+timeStamp::timeStamp(const uint64 &time)
+            :secondCount(time)
+{
 }
 
 
@@ -50,3 +55,6 @@ uint64 timeStamp::NowMs(){
     return seconds * 1000 + tv.tv_usec;
 #endif
 }
+
+
+

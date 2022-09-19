@@ -16,7 +16,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}   -Wall  -g2 -ggdb -o0 -lpthread")
 set(SYS_FRAME_H     "${CMAKE_SOURCE_DIR}/source/System_Frame")
 
 
-set(ROOT_BIN_OUT_DIR ${PROJECT_SOURCE_DIR}/bin)  #设置输出到项目源文件夹的bin目录下
+set(ROOT_BIN_OUT_DIR ${PROJECT_SOURCE_DIR})  #设置输出到项目源文件夹的bin目录下
 set(ROOT_ARC_OUT_DIR ${ROOT_BIN_OUT_DIR}) #同上
 set(ROOT_LIB_OUT_DIR ${ROOT_BIN_OUT_DIR})
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${ROOT_ARC_OUT_DIR})

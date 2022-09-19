@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/Administrator/Desktop/project/bin/kw_muduo.exe"
+			"path" : "C:/Users/Administrator/Desktop/project/RelWithDebInfo/kw_muduo.exe"
 		},
 		{
-			"path" : "C:/Users/Administrator/Desktop/project/bin/kw_muduo.pdb"
+			"path" : "C:/Users/Administrator/Desktop/project/RelWithDebInfo/kw_muduo.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -63,7 +63,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc   -Wall  -g2 -ggdb -o0 -lpthread /MD /O2 /Ob2 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc   -Wall  -g2 -ggdb -o0 -lpthread /MD /Zi /O2 /Ob1 /DNDEBUG"
 				}
 			],
 			"defines" : 
@@ -113,11 +113,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc   -Wall  -g2 -ggdb -o0 -lpthread /MD /O2 /Ob2 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc   -Wall  -g2 -ggdb -o0 -lpthread /MD /Zi /O2 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
 				"role" : "flags"
 			},
 			{

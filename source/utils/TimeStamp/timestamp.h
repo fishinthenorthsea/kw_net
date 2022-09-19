@@ -1,6 +1,7 @@
 #pragma once
 #include "../common.h"
 
+namespace kw{
 
 class timeStamp{
 public:
@@ -13,3 +14,7 @@ public:
 private:
     uint64 secondCount;
 };
+
+
+
+}

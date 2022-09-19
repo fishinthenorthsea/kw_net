@@ -10,16 +10,17 @@
 #include<thread>
 #include <stdio.h>
 #include <stdarg.h>
+#include<fstream>
+#include "assert.h" 
+//#define NDEBUG     开启 assert
 
-#include "Log/Log.cpp"
+
 #ifdef _WIN32
-
 #include <windows.h>
 
 #elif __linux__
 
 #include<sys/time.h>
-
 #endif
 
 

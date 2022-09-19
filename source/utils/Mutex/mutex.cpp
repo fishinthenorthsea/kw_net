@@ -1,6 +1,6 @@
 #include "mutex.h"
 
-namespace kw{
+using namespace kw;
 
 Mutex::Mutex(){
 
@@ -27,5 +27,4 @@ void Mutex::unlock(){
 #elif __linux__
     ptrhead_mutex_lock(&mutex_);
 #endif
-}
 }
