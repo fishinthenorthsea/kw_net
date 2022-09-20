@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.2.0)
 
+#project's  name 
+project(my_project)
+
 #set the project name
-set(LISIN_MTR "kw_muduo")
+set(PROJECT_NAME "kw_muduo")
 
 set(CMAKE_BUILD_TYPE "Debug") #Release 如果是发行版本就更换Debug为Release 
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
@@ -11,10 +14,7 @@ endif()
 #设置编译参数
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lpthread -std=gnu99 -g -o0") #
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}   -Wall  -g2 -ggdb -o0 -lpthread")
-
-
-set(SYS_FRAME_H     "${CMAKE_SOURCE_DIR}/source/System_Frame")
-
+set(CMAKE_CXX_STANDARD 11)
 
 set(ROOT_BIN_OUT_DIR ${PROJECT_SOURCE_DIR})  #设置输出到项目源文件夹的bin目录下
 set(ROOT_ARC_OUT_DIR ${ROOT_BIN_OUT_DIR}) #同上
@@ -30,4 +30,6 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE ${ROOT_LIB_OUT_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${ROOT_BIN_OUT_DIR})
 
 
-add_subdirectory(${CMAKE_SOURCE_DIR}/source)
+
+add_subdirectory(${PROJECT_SOURCE_DIR}/source)
+add_subdirectory(${PROJECT_SOURCE_DIR}/dependents)

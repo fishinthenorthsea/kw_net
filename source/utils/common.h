@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include<fstream>
-#include "assert.h" 
+#include <assert.h> 
 //#define NDEBUG     开启 assert
 
 
@@ -25,6 +25,7 @@
 
 
 
+#include "../dependents/spdlog/spdlog.h"
 
 
 
@@ -52,8 +53,7 @@ char* va(char* fmt, ...){
         va("va size > 1024\n");
         return buffer;
     }
-    int ret = vsnprintf (buffer,1024,fmt, args);
+    int ret = vsnprintf(buffer,1024,fmt, args);
     va_end (args);
-    printf("ret : %d\n",ret);
     return buffer;
 }

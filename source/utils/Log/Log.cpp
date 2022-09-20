@@ -18,6 +18,7 @@ KwFile::~KwFile(){
 void KwFile::write(const char* str, uint32 len){
     _fwrite_nolock(str, 1, len, fp_);
     ::fflush(fp_);
+    printf("%s",str);
 }
 
 

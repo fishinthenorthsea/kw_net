@@ -1,7 +1,6 @@
 #pragma once
 #include "../common.h"
 
-namespace kw{
 
 class Mutex{
 public:
@@ -38,4 +37,3 @@ private:
 
 
 
-}

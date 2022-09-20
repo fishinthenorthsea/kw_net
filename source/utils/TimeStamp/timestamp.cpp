@@ -2,7 +2,7 @@
 #include <chrono>
 
 using namespace kw;
-    
+
 timeStamp::timeStamp()
             :secondCount(0)
 {

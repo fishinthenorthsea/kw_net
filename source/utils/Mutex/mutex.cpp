@@ -1,6 +1,5 @@
 #include "mutex.h"
 
-using namespace kw;
 
 Mutex::Mutex(){
 

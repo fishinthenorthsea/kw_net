@@ -1,5 +1,3 @@
-C:/Users/Administrator/Desktop/project/build/CMakeFiles/INSTALL.dir
 C:/Users/Administrator/Desktop/project/build/CMakeFiles/ALL_BUILD.dir
 C:/Users/Administrator/Desktop/project/build/CMakeFiles/ZERO_CHECK.dir
 C:/Users/Administrator/Desktop/project/build/source/CMakeFiles/kw_muduo.dir
-C:/Users/Administrator/Desktop/project/build/source/CMakeFiles/INSTALL.dir
