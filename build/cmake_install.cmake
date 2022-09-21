@@ -33,10 +33,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
+  # Include the install script for the subdirectory.
   include("C:/Users/Administrator/Desktop/project/build/source/cmake_install.cmake")
-  include("C:/Users/Administrator/Desktop/project/build/dependents/cmake_install.cmake")
+endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Administrator/Desktop/project/build/dependents/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

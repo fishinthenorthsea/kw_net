@@ -14,12 +14,14 @@
 		"commands" : 
 		[
 			"add_executable",
-			"add_definitions"
+			"add_definitions",
+			"target_include_directories"
 		],
 		"files" : 
 		[
 			"source/CMakeLists.txt",
-			"CMakeLists.txt"
+			"CMakeLists.txt",
+			"dependents/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -40,6 +42,15 @@
 				"file" : 1,
 				"line" : 11,
 				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 6,
+				"parent" : 4
 			}
 		]
 	},
@@ -49,7 +60,10 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc   -Wall  -g2 -ggdb -o0 -lpthread /MD /Zi /O2 /Ob1 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc   -Wall  -g2 -ggdb -o0 -lpthread /MD /Zi /O2 /Ob1 /DNDEBUG -MD"
+				},
+				{
+					"fragment" : "-std:c++17"
 				}
 			],
 			"defines" : 
@@ -59,6 +73,13 @@
 					"define" : "_DEBUG"
 				}
 			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Administrator/Desktop/project/dependents/."
+				}
+			],
 			"language" : "CXX",
 			"languageStandard" : 
 			{
@@ -66,7 +87,7 @@
 				[
 					1
 				],
-				"standard" : "11"
+				"standard" : "17"
 			},
 			"sourceIndexes" : 
 			[
@@ -86,7 +107,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc   -Wall  -g2 -ggdb -o0 -lpthread /MD /Zi /O2 /Ob1 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc   -Wall  -g2 -ggdb -o0 -lpthread /MD /Zi /O2 /Ob1 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{

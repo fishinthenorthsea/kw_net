@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.2.0)
+cmake_minimum_required(VERSION 3.15)
 
 #project's  name 
-project(my_project)
+project(my_project VERSION 1.1.0 LANGUAGES C CXX)
 
 #set the project name
 set(PROJECT_NAME "kw_muduo")
@@ -14,7 +14,8 @@ endif()
 #设置编译参数
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lpthread -std=gnu99 -g -o0") #
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}   -Wall  -g2 -ggdb -o0 -lpthread")
-set(CMAKE_CXX_STANDARD 11)
+
+set(CMAKE_CXX_STANDARD 17)
 
 set(ROOT_BIN_OUT_DIR ${PROJECT_SOURCE_DIR})  #设置输出到项目源文件夹的bin目录下
 set(ROOT_ARC_OUT_DIR ${ROOT_BIN_OUT_DIR}) #同上

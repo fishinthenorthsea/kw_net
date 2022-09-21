@@ -140,9 +140,6 @@
 		},
 		{
 			"path" : "dependents/CMakeLists.txt"
-		},
-		{
-			"path" : "dependents/spdlog/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

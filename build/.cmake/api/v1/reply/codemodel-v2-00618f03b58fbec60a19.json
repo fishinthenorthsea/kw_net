@@ -14,7 +14,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -29,7 +29,7 @@
 					"jsonFile" : "directory-source-Debug-be4710394502bfacce20.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -41,29 +41,14 @@
 				},
 				{
 					"build" : "dependents",
-					"childIndexes" : 
-					[
-						3
-					],
 					"jsonFile" : "directory-dependents-Debug-bb79907e7dcd03da5887.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "dependents"
-				},
-				{
-					"build" : "dependents/spdlog",
-					"jsonFile" : "directory-dependents.spdlog-Debug-05ee8915205aa537c0ed.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.2.0"
-					},
-					"parentIndex" : 2,
-					"projectIndex" : 0,
-					"source" : "dependents/spdlog"
 				}
 			],
 			"name" : "Debug",
@@ -74,8 +59,7 @@
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					],
 					"name" : "my_project",
 					"targetIndexes" : 
@@ -105,7 +89,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "kw_muduo::@411ffd8adc737496fe19",
-					"jsonFile" : "target-kw_muduo-Debug-f8b5685be73cad5e55b6.json",
+					"jsonFile" : "target-kw_muduo-Debug-f5b6793e0176935424c8.json",
 					"name" : "kw_muduo",
 					"projectIndex" : 0
 				}
@@ -124,7 +108,7 @@
 					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -139,7 +123,7 @@
 					"jsonFile" : "directory-source-Release-be4710394502bfacce20.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -151,29 +135,14 @@
 				},
 				{
 					"build" : "dependents",
-					"childIndexes" : 
-					[
-						3
-					],
 					"jsonFile" : "directory-dependents-Release-bb79907e7dcd03da5887.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "dependents"
-				},
-				{
-					"build" : "dependents/spdlog",
-					"jsonFile" : "directory-dependents.spdlog-Release-05ee8915205aa537c0ed.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.2.0"
-					},
-					"parentIndex" : 2,
-					"projectIndex" : 0,
-					"source" : "dependents/spdlog"
 				}
 			],
 			"name" : "Release",
@@ -184,8 +153,7 @@
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					],
 					"name" : "my_project",
 					"targetIndexes" : 
@@ -215,7 +183,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "kw_muduo::@411ffd8adc737496fe19",
-					"jsonFile" : "target-kw_muduo-Release-e3ebcdbe052e498727c8.json",
+					"jsonFile" : "target-kw_muduo-Release-dc8b1e351ba6864674af.json",
 					"name" : "kw_muduo",
 					"projectIndex" : 0
 				}
@@ -234,7 +202,7 @@
 					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -249,7 +217,7 @@
 					"jsonFile" : "directory-source-MinSizeRel-be4710394502bfacce20.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -261,29 +229,14 @@
 				},
 				{
 					"build" : "dependents",
-					"childIndexes" : 
-					[
-						3
-					],
 					"jsonFile" : "directory-dependents-MinSizeRel-bb79907e7dcd03da5887.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "dependents"
-				},
-				{
-					"build" : "dependents/spdlog",
-					"jsonFile" : "directory-dependents.spdlog-MinSizeRel-05ee8915205aa537c0ed.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.2.0"
-					},
-					"parentIndex" : 2,
-					"projectIndex" : 0,
-					"source" : "dependents/spdlog"
 				}
 			],
 			"name" : "MinSizeRel",
@@ -294,8 +247,7 @@
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					],
 					"name" : "my_project",
 					"targetIndexes" : 
@@ -325,7 +277,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "kw_muduo::@411ffd8adc737496fe19",
-					"jsonFile" : "target-kw_muduo-MinSizeRel-6581f714da511a3f1bc1.json",
+					"jsonFile" : "target-kw_muduo-MinSizeRel-548349462894ad737d1b.json",
 					"name" : "kw_muduo",
 					"projectIndex" : 0
 				}
@@ -344,7 +296,7 @@
 					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -359,7 +311,7 @@
 					"jsonFile" : "directory-source-RelWithDebInfo-be4710394502bfacce20.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -371,29 +323,14 @@
 				},
 				{
 					"build" : "dependents",
-					"childIndexes" : 
-					[
-						3
-					],
 					"jsonFile" : "directory-dependents-RelWithDebInfo-bb79907e7dcd03da5887.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2.0"
+						"string" : "3.15"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "dependents"
-				},
-				{
-					"build" : "dependents/spdlog",
-					"jsonFile" : "directory-dependents.spdlog-RelWithDebInfo-05ee8915205aa537c0ed.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.2.0"
-					},
-					"parentIndex" : 2,
-					"projectIndex" : 0,
-					"source" : "dependents/spdlog"
 				}
 			],
 			"name" : "RelWithDebInfo",
@@ -404,8 +341,7 @@
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					],
 					"name" : "my_project",
 					"targetIndexes" : 
@@ -435,7 +371,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "kw_muduo::@411ffd8adc737496fe19",
-					"jsonFile" : "target-kw_muduo-RelWithDebInfo-79381875de66613d6901.json",
+					"jsonFile" : "target-kw_muduo-RelWithDebInfo-deea426d80419277c360.json",
 					"name" : "kw_muduo",
 					"projectIndex" : 0
 				}
