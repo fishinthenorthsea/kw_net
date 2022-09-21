@@ -358,6 +358,9 @@ my_project_SOURCE_DIR:STATIC=C:/Users/Administrator/Desktop/project
 //Value Computed by CMake
 spdlog_BINARY_DIR:STATIC=C:/Users/Administrator/Desktop/project/build/dependents/spdlog
 
+//The directory containing a CMake configuration file for spdlog.
+spdlog_DIR:PATH=spdlog_DIR-NOTFOUND
+
 //Value Computed by CMake
 spdlog_IS_TOP_LEVEL:STATIC=OFF
 

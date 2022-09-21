@@ -1802,6 +1802,18 @@
 			"value" : "C:/Users/Administrator/Desktop/project/build/dependents/spdlog"
 		},
 		{
+			"name" : "spdlog_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for spdlog."
+				}
+			],
+			"type" : "PATH",
+			"value" : "spdlog_DIR-NOTFOUND"
+		},
+		{
 			"name" : "spdlog_IS_TOP_LEVEL",
 			"properties" : 
 			[

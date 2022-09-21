@@ -2,6 +2,8 @@
 #include "utils/Log/Log.cpp"
 #include "utils/TimeStamp/timestamp.cpp"
 #include "utils/Mutex/mutex.cpp"
+
+#include "spdlog/spdlog.h"
 uint32 num = 0;
 Mutex mutex;
 
@@ -22,7 +24,7 @@ int main(){
     ttt();
 
 
-    spdlog::info("Hello, {}!", "World");
+   
 
 
     // std::thread a([&](){

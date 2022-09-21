@@ -6,14 +6,12 @@ project(my_project VERSION 1.1.0 LANGUAGES C CXX)
 #set the project name
 set(PROJECT_NAME "kw_muduo")
 
-set(CMAKE_BUILD_TYPE "Debug") #Release 如果是发行版本就更换Debug为Release 
-if(CMAKE_BUILD_TYPE STREQUAL Debug)
-    add_definitions(-D_DEBUG) #添加D_DEBUG编译参数
-endif()
+
 
 #设置编译参数
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lpthread -std=gnu99 -g -o0") #
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lpthread -std=gnu99 -g -o0") #
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}   -Wall  -g2 -ggdb -o0 -lpthread")
+set(CMAKE_BUILD_TYPE "Release") #Release 如果是发行版本就更换Debug为Release 
 
 set(CMAKE_CXX_STANDARD 17)
 

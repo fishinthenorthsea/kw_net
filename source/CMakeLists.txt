@@ -9,8 +9,8 @@ add_executable( ${PROJECT_NAME}
                 ${DIR_SOURCE_SRCS}
               )
               
+
+
 #头文件包含
-target_include_directories(${PROJECT_NAME} PRIVATE
-                           ${SYS_FRAME_H}
-                           )
+target_include_directories(${PROJECT_NAME} PRIVATE . )
  
