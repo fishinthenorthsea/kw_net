@@ -1,15 +1,17 @@
 #include "utils/common.h"
-#include "utils/Log/Log.cpp"
-#include "utils/TimeStamp/timestamp.cpp"
-#include "utils/Mutex/mutex.cpp"
-
+#include "utils/Log.h"
+#include "utils/timestamp.h"
+#include "utils/mutex.h"
 #include "spdlog/spdlog.h"
+//#include "spdlog/spdlog.h"
 uint32 num = 0;
 Mutex mutex;
 
 void ttt(){
     RETURN_VOID;
 }
+using namespace kw;
+
 
 int main(){
     std::cout<<timeStamp::NowSecond()<<std::endl;
@@ -22,7 +24,7 @@ int main(){
     std::string sss("12345");
     LogInfo("sss\n");
     ttt();
-
+    
 
    
 

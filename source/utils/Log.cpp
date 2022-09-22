@@ -41,3 +41,17 @@ void KwLog::write(const char* str){
     file_->write(str,strlen(str));
 }
 
+
+
+
+
+void commonLogInfo(const char* msg){
+    char str[1100];
+    snprintf(str,1100,"[%s INFO] %s",kw::timeStamp::formatString().c_str(), msg);
+    kw::KwLog::GetInstanceKwLog().write(str);
+}
+void commonLogError(const char* msg){
+    char str[1100];
+    snprintf(str,1100,"[%s Error] %s",kw::timeStamp::formatString().c_str(), msg);
+    kw::KwLog::GetInstanceKwLog().write(str);
+}

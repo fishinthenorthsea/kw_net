@@ -30,5 +30,14 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${ROOT_BIN_OUT_DIR})
 
 
 
+
+
 add_subdirectory(${PROJECT_SOURCE_DIR}/source)
 add_subdirectory(${PROJECT_SOURCE_DIR}/dependents)
+
+
+
+ 
+
+
+

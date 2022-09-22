@@ -1,6 +1,6 @@
 #pragma once
-#include "../common.h"
-#include "../TimeStamp/timestamp.h"
+#include "common.h"
+#include "timestamp.h"
 
 
 
@@ -53,17 +53,8 @@ private:
 
 
 
-void commonLogInfo(const char* msg){
-    char str[1100];
-    snprintf(str,1100,"[%s INFO] %s",kw::timeStamp::formatString().c_str(), msg);
-    kw::KwLog::GetInstanceKwLog().write(str);
-}
-void commonLogError(const char* msg){
-    char str[1100];
-    snprintf(str,1100,"[%s Error] %s",kw::timeStamp::formatString().c_str(), msg);
-    kw::KwLog::GetInstanceKwLog().write(str);
-}
-
+void commonLogInfo(const char* msg);
+void commonLogError(const char* msg);
 //#define LogInfo(...)  {kw::KwLog::GetInstanceKwLog().write("123");va(...);}
 #define LogInfo(...)  (commonLogInfo(va(__VA_ARGS__)));
 

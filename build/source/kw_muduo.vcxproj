@@ -321,6 +321,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="C:\Users\Administrator\Desktop\project\source\utils\Log.cpp" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\project\source\utils\common.cpp" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\project\source\utils\mutex.cpp" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\project\source\utils\timestamp.cpp" />
     <ClCompile Include="C:\Users\Administrator\Desktop\project\source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
