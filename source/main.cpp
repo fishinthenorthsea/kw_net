@@ -2,8 +2,7 @@
 #include "utils/Log.h"
 #include "utils/timestamp.h"
 #include "utils/mutex.h"
-#include "spdlog/spdlog.h"
-//#include "spdlog/spdlog.h"
+
 uint32 num = 0;
 Mutex mutex;
 
@@ -12,8 +11,14 @@ void ttt(){
 }
 using namespace kw;
 
+void init(){
+    
+    return;
+}
 
 int main(){
+
+    init();
     std::cout<<timeStamp::NowSecond()<<std::endl;
     std::cout<<timeStamp::NowMs()<<std::endl;
     std::cout<<timeStamp::formatString()<<std::endl;

@@ -1,6 +1,7 @@
 #pragma once
 #include "common.h"
 #include "timestamp.h"
+#include "spdlog/spdlog.h"
 
 
 

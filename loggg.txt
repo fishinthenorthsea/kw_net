@@ -22,3 +22,7 @@ sss
 [20220922 19:33:42 Error] place:[C:\Users\Administrator\Desktop\project\source\main.cpp:11]
 [20220922 19:33:47 INFO] sss
 [20220922 19:33:47 Error] place:[C:\Users\Administrator\Desktop\project\source\main.cpp:11]
+[20220922 20:49:10 INFO] sss
+[20220922 20:49:10 Error] place:[C:\Users\fujie\Desktop\kw_net\source\main.cpp:11]
+[20220922 20:49:22 INFO] sss
+[20220922 20:49:22 Error] place:[C:\Users\fujie\Desktop\kw_net\source\main.cpp:11]

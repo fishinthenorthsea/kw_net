@@ -1,6 +1,6 @@
-^C:\USERS\ADMINISTRATOR\DESKTOP\PROJECT\CMAKELISTS.TXT
+^C:\USERS\FUJIE\DESKTOP\KW_NET\CMAKELISTS.TXT
 setlocal
-D:\bin\cmake.exe -SC:/Users/Administrator/Desktop/project -BC:/Users/Administrator/Desktop/project/build --check-stamp-file C:/Users/Administrator/Desktop/project/build/CMakeFiles/generate.stamp
+F:\cmake\cmake-3.22.3-windows-x86_64\bin\cmake.exe -SC:/Users/fujie/Desktop/kw_net -BC:/Users/fujie/Desktop/kw_net/build --check-stamp-file C:/Users/fujie/Desktop/kw_net/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
