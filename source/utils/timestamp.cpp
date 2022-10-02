@@ -17,6 +17,8 @@ timeStamp::timeStamp(const uint64 &time)
 std::string timeStamp::formatString(){
     std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
 	std::time_t now_time_t = std::chrono::system_clock::to_time_t(now);
+
+    
 	std::tm* tm_time = std::localtime(&now_time_t);
     char buf[128];
    // int microseconds = static_cast<int>(microSecondsSinceEpoch_ % kMicroSecondsPerSecond);
@@ -33,6 +35,17 @@ std::string timeStamp::formatString(){
 	return buf;
 }
 
+
+void timeStamp::formatString(time_t time){
+    char myStr[25] = { 0 };
+	struct tm *t = gmtime(&time);
+	t->tm_hour += 8;//转为北京时间记的要加8
+	strftime(myStr, sizeof(myStr), "%Y-%m-%d:%H:%M:%S", t);
+	for (int i = 0; myStr[i]; ++i) {
+		std::cout << myStr[i];
+	}
+	std::cout << std::endl;
+}
 
 uint64 timeStamp::NowSecond(){
 	auto nowTime = std::chrono::system_clock::now();

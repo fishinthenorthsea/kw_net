@@ -10,7 +10,7 @@ set(PROJECT_NAME "kw_muduo")
 
 #设置编译参数
 #set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lpthread -std=gnu99 -g -o0") #
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}   -Wall  -g2 -ggdb -o0 -lpthread")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -std=c++11  -await -Wall  -g2 -ggdb -o0 -lpthread")
 set(CMAKE_BUILD_TYPE "Release") #Release 如果是发行版本就更换Debug为Release 
 
 set(CMAKE_CXX_STANDARD 17)
@@ -30,10 +30,12 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${ROOT_BIN_OUT_DIR})
 
 
 
-
-
 add_subdirectory(${PROJECT_SOURCE_DIR}/source)
 add_subdirectory(${PROJECT_SOURCE_DIR}/dependents)
+
+
+target_compile_options(${PROJECT_NAME} PUBLIC -DASIO_STANDALONE)
+target_link_libraries(${PROJECT_NAME} PUBLIC -lwsock32 -lws2_32)
 
 
 
