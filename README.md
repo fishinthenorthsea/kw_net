@@ -1,1 +1,0 @@
-# The harder you work, the luckier you are

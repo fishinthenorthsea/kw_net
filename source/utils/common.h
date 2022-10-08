@@ -12,11 +12,17 @@
 #include <stdarg.h>
 #include<fstream>
 #include <assert.h> 
+#include <memory>
+
 //#define NDEBUG     开启 assert
 
 
 #ifdef _WIN32
+<<<<<<< Updated upstream
 #define WIN32_LEAN_AND_MEAN
+=======
+#define WIN32_LEAN_AND_MEAN 
+>>>>>>> Stashed changes
 #include <windows.h>
 
 #elif __linux__
@@ -34,3 +40,4 @@ typedef unsigned char          uint8;
 
 
 char* va(char* fmt, ...);
+
