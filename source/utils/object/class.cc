@@ -1,5 +1,4 @@
-#include "gcObject.h"
-#include "utils/log.h"
+#include "class.h"
 
 GcClass* GcObject::GetStaticClass(){
     static GcClass* staticClass = nullptr;
