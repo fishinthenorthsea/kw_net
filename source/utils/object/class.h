@@ -20,7 +20,6 @@ private:
 
 };
 
-uint32 GcClass::maxComponentID_ = 0;
 
 class GcClassImpl : public GcClass{      // 其实GcClass 应该是个虚基类，但是暂时不懂为什么
 public:

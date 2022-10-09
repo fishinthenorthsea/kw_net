@@ -37,30 +37,30 @@ typedef unsigned char          BYTE;
 
 
 enum ValueType{
-    NONE    = 0,
-    BOOL    = 1,    // 'b'
-    INT8    = 2;    // 'c'  char
-    UINT8   = 3;    // 'y'  byte
-    INT16   = 4,    // 'h'  short
-    UINT16  = 5,    // 'w'  word
-    INT32   = 6,    // 'i'  integer
-    UINT32  = 7,    // 'u'  uint
-    INT64   = 8,    // 'I'  Interger
-    UINT64  = 9,    // 'U'  UInterger
+    KNONE    = 0,
+    KBOOL    = 1,    // 'b'
+    KINT8    = 2,    // 'c'  char
+    kINT8   = 3,    // 'y'  byte
+    kINT16   = 4,    // 'h'  short
+    kUINT16  = 5,    // 'w'  word
+    kINT32   = 6,    // 'i'  integer
+    kUINT32  = 7,    // 'u'  uint
+    kINT64   = 8,    // 'I'  Interger
+    kUINT64  = 9,    // 'U'  UInterger
 
-    FLOAT   = 10,   // 'f'  float
-    DOUBLE  = 11,   // 'd'  double
+    kFLOAT   = 10,   // 'f'  float
+    kDOUBLE  = 11,   // 'd'  double
 
-    STRING  = 12,   // 's'  string
+    kSTRING  = 12,   // 's'  string
 
-    OBJECT  = 13,   // 'o'  object
-    ARRAY   = 14,   // 'a'  数组
-    DICT    = 15,   // 'D'  字典 map
-    MEMBLOCK= 16,   // 'm'  memblock
-    USERPTR = 17,   // 'p'  玩家指针
-    FUNC    = 18,   // 'f'  函数指针
+    kOBJECT  = 13,   // 'o'  object
+    kARRAY   = 14,   // 'a'  数组
+    kDICT    = 15,   // 'D'  字典 map
+    kMEMBLOCK= 16,   // 'm'  memblock
+    kUSERPTR = 17,   // 'p'  玩家指针
+    kFUNC    = 18,   // 'f'  函数指针
 
-    MAX     = 19
+    kMAX     = 19
 };
 
 

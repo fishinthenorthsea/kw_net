@@ -1,6 +1,5 @@
 #pragma once
 #include "utils/common.h"
-#include "utils/component/component.h"
 #include "class.h"
 
 

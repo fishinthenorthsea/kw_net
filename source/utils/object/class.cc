@@ -1,9 +1,4 @@
 #include "class.h"
 
-GcClass* GcObject::GetStaticClass(){
-    static GcClass* staticClass = nullptr;
-    if(nullptr == staticClass){
-        staticClass = new GcClassImpl();
-    }
-    return staticClass;
-}
+
+uint32 GcClass::maxComponentID_ = 0;
