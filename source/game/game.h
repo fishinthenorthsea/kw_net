@@ -2,8 +2,9 @@
 #include "utils/common.h"
 #include "utils/object/gcObject.h"
 
-class Game{
-public:
+class Game : public GcObject{
+    CLASS_DECLARE(Game, GcObject)
+
     GcObject* FindEntityByEid(uint64 eid);
 
 private:

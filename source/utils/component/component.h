@@ -4,6 +4,7 @@
 
 
 class GcComponent : public GcObject{
+
 public:
 
 private:

@@ -1,10 +1,12 @@
 #include "gcObject.h"
 #include "utils/log.h"
 
-GcClass* GcObject::GetStaticClass(){
+static autoRegisterClass<GcObject> ___autoClass;
+
+GcClass* GcObject::_staticGetClass(){
     static GcClass* staticClass = nullptr;
     if(nullptr == staticClass){
-        staticClass = new GcClassImpl();
+        staticClass = ___autoClass.GetStaticClass("GcObject");
     }
     return staticClass;
 }

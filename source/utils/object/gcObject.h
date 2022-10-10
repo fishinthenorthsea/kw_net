@@ -5,10 +5,11 @@
 
 class GcObject{                                 //对外开放的 可实现动态识别的基类
 public:
-    static GcClass* GetStaticClass();    
+    static GcClass* GetStaticClass(){ return _staticGetClass(); };    
 
     
 private:
+    static GcClass* _staticGetClass();
 };
 
 
