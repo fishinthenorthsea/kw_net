@@ -1,0 +1,10 @@
+Private Sub Workbook_BeforeSave(ByVal SaveAsUI As Boolean, Cancel As Boolean)
+    Dim str As String
+    Dim bookName As String
+    bookName = ActiveWorkbook.Name
+    str = "python -m excel_2_csv_converter -path "
+    str = str + bookName
+    Debug.Print str
+    Shell str
+End Sub
+
