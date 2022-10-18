@@ -10,3 +10,8 @@ GcObject* Game::FindEntityByEid(uint64 eid){
     }
     return iter->second;
 }
+
+
+void Game::Init(){
+    
+}

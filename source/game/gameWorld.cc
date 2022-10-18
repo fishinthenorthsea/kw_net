@@ -10,7 +10,7 @@ void gameWorld::createGameWorld(){
 
 
 gameWorld::gameWorld(){
-    //TODO 父类初始化
+    BaseClass::Init();
 
     //TODO 地图初始化
 

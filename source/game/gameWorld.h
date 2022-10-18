@@ -3,6 +3,7 @@
 #include "utils/sql/kw_mysql.h"
 #include "game.h"
 class gameWorld :public Game{
+    CLASS_DECLARE(gameWorld, Game)
 public:
     static void createGameWorld();
     void init();

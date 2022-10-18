@@ -28,7 +28,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE ${ROOT_LIB_OUT_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${ROOT_BIN_OUT_DIR})
 
 # 让vs 也可以调试      就是简单的让lib放到vs可以检测到的位置
-file(COPY lib DESTINATION build/source)
+# file(COPY lib DESTINATION build/source)
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/source)
 add_subdirectory(${PROJECT_SOURCE_DIR}/dependents)
@@ -38,9 +38,10 @@ target_include_directories(
     ${PROJECT_NAME} PUBLIC source
 )
 
-# 库文件目录
-target_link_directories(${PROJECT_NAME} PUBLIC lib)
 
+
+# 库文件目录
+target_link_directories(${PROJECT_NAME} PUBLIC bin)
 
 # mysql
 target_link_libraries(${PROJECT_NAME} PUBLIC libmysql)

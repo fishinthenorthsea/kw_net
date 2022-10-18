@@ -5,7 +5,7 @@ import argparse
 import os
 import time
  
-dirs = "res/database/game_system/"
+dirs = "../bin/res/database/game_system/"
 
 def args_parse():
     # construct the argument parse and parse the arguments
