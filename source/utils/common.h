@@ -66,3 +66,6 @@ enum ValueType{
 
 char* va(char* fmt, ...);
 
+void splitStr(const std::string &str, const std::string &cut, std::vector<std::string> &strArray);
+
+

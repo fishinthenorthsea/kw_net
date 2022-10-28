@@ -24,6 +24,7 @@ class CTableManager{
 public:
     static void CreateInstance();
     CTable* get(const std::string& name);
+    CTable* parseCsv(const char* path);
 private:
     std::unordered_map<std::string, CTable*> m_tables;
 };

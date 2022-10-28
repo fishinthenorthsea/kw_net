@@ -97,9 +97,7 @@ int main(int argc, char *argv[])
         tcp::acceptor acceptor(ctx, listen_endpoint);
 
         co_spawn(ctx, listen(acceptor), detached);
-        
 
-        
         GameApp game;
 
         ctx.run();
