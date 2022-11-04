@@ -6,6 +6,9 @@ aux_source_directory(utils/kvTable DIR_SOURCE_SRCS)
 
 aux_source_directory(game DIR_SOURCE_SRCS)
 
+aux_source_directory(pb DIR_SOURCE_SRCS)
+aux_source_directory(save_pb DIR_SOURCE_SRCS)
+
 aux_source_directory(component/ComponentHome DIR_SOURCE_SRCS)
  # 指定生成目标
 add_executable(${PROJECT_NAME} main.cc  ${DIR_SOURCE_SRCS})

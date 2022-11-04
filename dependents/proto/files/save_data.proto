@@ -2,8 +2,18 @@ syntax = "proto3";
 package KwSave;
 
 import "save_home.proto";
+import "save_play.proto";
+
+message SaveSystem{
+	SaveHomeData    save_home   = 1;
+	SavePlayData    save_play   = 2;
+}
 
 
-message Test{
-    uint32   id     = 1;
+
+//真正存在数据库中的二进制
+message Save_Data{
+	SaveSystem homeSave = 1;   // 主城数据存盘
+	SaveSystem playSave = 2;   // 玩家数据存盘
+	SaveSystem mapSave  = 3;   // 地图数据存盘
 }

@@ -6,7 +6,7 @@ class gameWorld :public Game{
     CLASS_DECLARE(gameWorld, Game)
 public:
     static void createGameWorld();
-    void init();
+    bool Init();
     ~gameWorld();
 
 private:

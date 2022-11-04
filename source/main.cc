@@ -79,8 +79,10 @@ awaitable<void> listen(tcp::acceptor &acceptor)
 
 void init()
 {
-}
 
+
+
+}
 int main(int argc, char *argv[])
 {
     try
@@ -99,6 +101,8 @@ int main(int argc, char *argv[])
         co_spawn(ctx, listen(acceptor), detached);
 
         GameApp game;
+
+        game.Init();
 
         ctx.run();
     }

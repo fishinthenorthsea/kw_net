@@ -6,7 +6,7 @@ class Game : public GcObject{
     CLASS_DECLARE(Game, GcObject)
 
     GcObject* FindEntityByEid(uint64 eid);
-    void Init();
+    bool Init();
 
 private:
     std::unordered_map<uint64, GcObject*>entityMap_;

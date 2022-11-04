@@ -3,6 +3,8 @@ package KwSave;
 
 
 
-message Test1{
-    uint32   id     = 1;
+message SaveHomeData{
+    float  x = 1;
+	float  z = 2;
+	
 }
