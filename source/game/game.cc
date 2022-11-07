@@ -13,9 +13,6 @@ GcObject* Game::FindEntityByEid(uint64 eid){
 
 
 bool Game::Init(){
-    if (!BaseClass::Init()){
-        RETURN_FALSE;
-    }
 
 
     

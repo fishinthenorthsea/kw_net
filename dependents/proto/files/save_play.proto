@@ -1,0 +1,10 @@
+syntax = "proto3";
+package KwSave;
+
+
+
+message SavePlayData{
+    float  x = 1;
+	float  z = 2;
+	
+}

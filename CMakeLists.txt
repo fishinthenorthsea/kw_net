@@ -36,6 +36,7 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/dependents)
 # 头文件目录
 target_include_directories(
     ${PROJECT_NAME} PUBLIC source
+    ${PROJECT_NAME} PUBLIC 
 )
 
 
