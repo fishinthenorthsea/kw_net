@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 # project's  name
-project(my_project VERSION 1.1.0 LANGUAGES C CXX)
+project(my_project LANGUAGES C CXX)
 
 # set the project name
 set(PROJECT_NAME "kw_server")
@@ -10,7 +10,7 @@ set(PROJECT_NAME "kw_server")
 # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lpthread -std=gnu99 -g -o0") #
 # -w 表示取消所有 warning
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -std=c++11  -await -Wall  -g2 -ggdb -o0 -lpthread -w")
-set(CMAKE_BUILD_TYPE "Release") # Release 如果是发行版本就更换Debug为Release
+#set(CMAKE_BUILD_TYPE Release) # Release 如果是发行版本就更换Debug为Release    没JB用
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -46,3 +46,14 @@ target_link_directories(${PROJECT_NAME} PUBLIC bin)
 
 # mysql
 target_link_libraries(${PROJECT_NAME} PUBLIC libmysql)
+# release
+#target_link_libraries(${PROJECT_NAME} PUBLIC libprotobuf)
+#target_link_libraries(${PROJECT_NAME} PUBLIC libprotoc)
+
+target_link_libraries ( ${PROJECT_NAME} PRIVATE
+						debug libprotobufd
+						optimized libprotobuf )
+
+target_link_libraries ( ${PROJECT_NAME} PRIVATE
+						debug libprotocd
+						optimized libprotoc )

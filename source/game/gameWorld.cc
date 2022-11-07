@@ -30,8 +30,8 @@ bool gameWorld::Init(){
     // TODO 地图初始化
 
     // TODO 连接数据库
-    // sql_ = new Mysql;
-    // sql_->connectSql("127.0.0.1", "root", "", "yc_t16");
+    sql_ = new Mysql;
+    sql_->connectSql("127.0.0.1", "root", "", "yc_t16");
 
     WorldLoadData(); //游戏开启读盘操作
     return true;
